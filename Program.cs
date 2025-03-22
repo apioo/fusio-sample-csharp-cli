@@ -8,7 +8,7 @@ List<string> scopes = ["backend"];
 ITokenStore tokenStore = new MemoryTokenStore();
 
 var credentials = new OAuth2("test", "FRsNh1zKCXlB", "https://demo.fusio-project.org/authorization/token", "", tokenStore, scopes);
-var client = new Fusio.SDK.Client("https://demo.fusio-project.org", credentials);
+var client = new Client("https://demo.fusio-project.org", credentials);
 
 try
 {
