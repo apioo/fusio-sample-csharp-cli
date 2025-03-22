@@ -4,11 +4,11 @@ using Sdkgen.Client;
 using Sdkgen.Client.Credentials;
 using Sdkgen.Client.TokenStore;
 
-List<string> scopes = new() {"backend"};
+List<string> scopes = ["backend"];
 ITokenStore tokenStore = new MemoryTokenStore();
 
-ICredentials credentials = new OAuth2("test", "FRsNh1zKCXlB", "https://demo.fusio-project.org/authorization/token", "", tokenStore, scopes);
-Client client = new("https://demo.fusio-project.org", credentials);
+var credentials = new OAuth2("test", "FRsNh1zKCXlB", "https://demo.fusio-project.org/authorization/token", "", tokenStore, scopes);
+var client = new Fusio.SDK.Client("https://demo.fusio-project.org", credentials);
 
 try
 {

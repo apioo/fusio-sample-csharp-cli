@@ -4,8 +4,8 @@ Fusio C# CLI sample
 
 # About
 
-This is a simple C# CLI application which shows how to use the PHP SDK to access a Fusio instance.
-In this example we simply output all registered routes.
+This is a simple C# CLI application which shows how to use the C# SDK to access a Fusio instance.
+In this example we simply output all registered operations.
 Fusio is an open source API management which helps to build and manage great APIs more information at:
 https://www.fusio-project.org/
 
